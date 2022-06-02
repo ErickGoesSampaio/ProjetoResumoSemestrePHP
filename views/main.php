@@ -2,7 +2,7 @@
 include 'topo.php';
 
 // Quando fazer o inicio da sessão mostrará a mensagem de Página Inicial, 
-// ou mostrará a mensagem de Contato adicionado quando for adionar um novo contato
+// ou mostrará a mensagem (Contato incluído com sucesso.) quando for adionar um novo contato
 
 if($_SESSION['mensagem'] == "") {
     $mensagem = 'Página Inicial';
