@@ -1,4 +1,5 @@
 <?php
+// Esta Pagina é somente o Menu de navegação do sistema
 // starta sessões
 session_start();
 if(isset($_SESSION['navegacao'])) {
