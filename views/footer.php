@@ -1,6 +1,6 @@
-<footer class="footer mt-auto py-3 bg-light">
+<footer class="footer mt-auto py-3 bg-secondary">
     <div class="container">
-        <span class="text-muted">Rodapé da página.</span>
+        <span class="text-black">@Erick Goes Sampaio. | FATEC PG</span>
     </div>
 </footer>
 
