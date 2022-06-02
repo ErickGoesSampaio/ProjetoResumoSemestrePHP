@@ -12,7 +12,7 @@ class Database
     # PDO config vars
     private static $db_type = 'mysql';
     private static $db_hostname = 'localhost';
-    private static $db_name = 'agenda';
+    private static $db_name = 'name';
     private static $db_user = 'root';
     private static $db_password = '';
 
