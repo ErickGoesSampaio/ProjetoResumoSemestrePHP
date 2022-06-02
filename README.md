@@ -46,9 +46,11 @@ Os arquivos dá pasta views são html com poucas configuraçoes em php com metod
 As alterações em classes deverão ser atualizadas utilizando o comando <code>composer dump-autoload -o</code>
 
 ## Imagens do projéto
+```
 <code><img src="img-projeto/Login.png"></code>
 <code><img src="img-projeto/Cadastro.png"></code>
 <code><img src="img-projeto/Home.png"></code>
 <code><img src="img-projeto/NovoContato.png"></code>
 <code><img src="img-projeto/ListarTodos.png"></code>
 <code><img src="img-projeto/ConfigurarUsuario.png"></code>
+´´´
