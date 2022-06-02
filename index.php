@@ -1,5 +1,6 @@
 <?php
 session_start();
+
 if(isset($_SESSION['navegacao'])) {
     header('Location: views/main.php');
 }
@@ -75,6 +76,7 @@ require 'vendor/autoload.php';
                 <div class="col-md-3 mb-3">
                     <p class="text-danger">
                         <?php
+                        // Erro de login parecera na tela a mensagem (Usuário e/ou senha inválidos)
                         if(isset($_SESSION['erro_login'])) {
                             echo $_SESSION['erro_login'];
                         }
