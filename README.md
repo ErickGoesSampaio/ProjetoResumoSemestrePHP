@@ -56,16 +56,3 @@ Os arquivos dá pasta views são html com poucas configuraçoes em php com metod
 ## controller
 
   faz o controle de acesso e funcionalidades do sistema utilizando Switch
-
-
-
-<!--
-## Imagens do projéto
-<code><img height="200" src="img-projeto/Login.png"></code>
-<code><img height="200" src="img-projeto/Cadastro.png"></code>
-<code><img height="200" src="img-projeto/Home.png"></code>
-<code><img height="200" src="img-projeto/NovoContato.png"></code>
-<code><img height="200" src="img-projeto/ListarTodos.png"></code>
-<code><img height="200" src="img-projeto/ConfigurarUsuario.png"></code>
--->
-

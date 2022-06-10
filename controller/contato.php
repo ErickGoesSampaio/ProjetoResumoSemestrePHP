@@ -15,7 +15,7 @@ use PDOException;
 $contato = new Contato();
 $contato_model = new ContatoModel();
 
-// Caso o usuário decida fazer uma nova inserção de  contato
+// Caso o usuário decida fazer o cadastro de um novo contato
 
 switch ($_POST['opcao']) {
     case 'novo':

@@ -14,6 +14,7 @@ include 'topo.php';
 use Agenda\Contato\Contato;
 use Agenda\Contato\ContatoModel;
 
+// Busca todos os contatos do usuario em sessão
 $contato = new Contato();
 $contato->set("usuario_id", $_SESSION['navegacao'][0]['id']);
 $contato_model = new ContatoModel();

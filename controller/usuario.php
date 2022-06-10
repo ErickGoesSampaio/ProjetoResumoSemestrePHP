@@ -15,6 +15,8 @@ use PDOException;
 $usuario = new Usuario();
 $usuario_model = new UsuarioModel();
 
+//O usuario Faz o login, alteração de dados ou crie uma nova conta.
+
 switch ($_POST['opcao']) {
     case 'login':
         try {
