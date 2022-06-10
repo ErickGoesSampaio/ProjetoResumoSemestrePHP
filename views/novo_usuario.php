@@ -1,5 +1,10 @@
 <?php
-
+/**
+ * Esta pagia é a layout de cadastro
+ * onde o usuário irá realizar seu cadastro
+ * no sistema para que possa ter acesso a ele
+ * e usufluilo.
+ */
 namespace Agenda;
 ?>
     <!doctype html>

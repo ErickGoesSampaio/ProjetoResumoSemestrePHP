@@ -1,5 +1,13 @@
 <?php
 
+/**
+ * Esta pagina realiza o crud 
+ * de todos os usuários tambêm
+ * é utilizado uma função de construct
+ * para a conecxão com o banco de dados
+ * 
+ */
+
 namespace Agenda\Usuario;
 
 use Agenda\Database\Database;
@@ -15,6 +23,7 @@ use PDOException;
  *      atualizar()
  *      excluir()
  */
+
 class UsuarioModel
 {
     private static $pdo;

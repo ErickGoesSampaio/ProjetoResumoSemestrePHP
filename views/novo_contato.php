@@ -1,5 +1,10 @@
 <?php
-
+/**
+ * Esta pagia é a layout de novos contatos
+ * onde o usuário irá realizar o cadastro
+ *  de um novo contato com nome, email e telefone
+ * do contato.
+ */
 namespace Agenda;
 include 'topo.php';
 //session_start();

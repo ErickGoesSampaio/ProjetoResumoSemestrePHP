@@ -1,5 +1,9 @@
 <?php
-
+/**
+ * Esta pagina é a layout para a configuração 
+ * dos dados do usuário caso ele deseje atualizar
+ * a senha ou nome.
+ */
 namespace Agenda;
 include 'topo.php';
 // session_start();

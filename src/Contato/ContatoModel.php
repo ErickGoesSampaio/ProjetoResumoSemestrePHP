@@ -1,5 +1,13 @@
 <?php
-
+/**
+ * Esta pagina realiza o crud de todos
+ * os contatos com e faz a utilização
+ * da classe Contato para mostrar os 
+ * contatos de um determinado usuário
+ * tambêm é utilizado uma função de construct
+ * para a conecxão com o banco de dados
+ * 
+ */
 namespace Agenda\Contato;
 
 use Agenda\Database\Database;

@@ -1,5 +1,9 @@
 <?php
-
+/**
+ * Esta pagia é a layout de contatos
+ * onde irá listar todos os contatos
+ *  do usuário logado
+ */
 namespace Agenda;
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
@@ -40,19 +44,19 @@ $dados = $contato_model->listar($contato);
                         <td><?php echo $valor['email']; ?></td>
                         <td><?php echo $valor['telefone']; ?></td>
                         <td class="text-center">
-                            <form action="" method="post">
+                            <form action="../src/Contato/ContatoModel.php" method="post">
                                 <input type="submit" value="Editar">
                             </form>
                         </td>
                         <td class="text-center">
-                            <form action="" method="post">
-                                <input onclick="excluir()" type="submit" value="Excluir">
+                            <form action="../src/Contato/ContatoModel.php" method="post">
+                                <input type="submit" value="Excluir">
                             </form>
                         </td>
                     </tr>
 
                 <?php } ?>
-                
+
                 </tbody>
             </table>
         </div>

@@ -7,22 +7,38 @@ Tambem futura mente será implantado uma função que o usuarios pederá escolhe
 ```sql
 CREATE DATABASE agenda;
 
-CREATE TABLE usuarios
+CREATE TABLE `usuarios`
 (
-    id       INT(3)         NOT NULL PRIMARY KEY AUTO_INCREMENT,
-    nome     VARCHAR(50)    NOT NULL,
-    usuario  VARCHAR(32)    NOT NULL,
-    senha    VARCHAR(32)    NOT NULL
+    `id`       INT(3)         NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    `nome`     VARCHAR(50)    NOT NULL,
+    `usuario`  VARCHAR(32)    NOT NULL,
+    `senha`    VARCHAR(32)    NOT NULL
 );
 
-CREATE TABLE contatos
+CREATE TABLE `contatos`
 (
-    id           INT(3)         NOT NULL PRIMARY KEY AUTO_INCREMENT,
-    usuario_id   INT(3)         NOT NULL,
-    nome         VARCHAR(50)    NOT NULL,
-    email        VARCHAR(50)    NOT NULL,
-    telefone     VARCHAR(20)    NOT NULL
+    `id`           INT(3)         NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    `usuario_id`   INT(3)         NOT NULL,
+    `nome`         VARCHAR(50)    NOT NULL,
+    `email`        VARCHAR(50)    NOT NULL,
+    `telefone`     VARCHAR(20)    NOT NULL
 );
+
+DROP TABLE IF EXISTS `events`;
+CREATE TABLE IF NOT EXISTS `events` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `title` varchar(220) DEFAULT NULL,
+  `color` varchar(10) DEFAULT NULL,
+  `start` datetime DEFAULT NULL,
+  `end` datetime DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=12 DEFAULT CHARSET=utf8;
+
+
+
+INSERT INTO `events` (`id`, `title`, `color`, `start`, `end`) VALUES
+(1, 'Prova PW4', '#FFD700', '2022-06-10 15:00:00', '2022-06-10 18:00:00');
+
 ```
 ## Pasta views
 
@@ -41,10 +57,9 @@ Os arquivos dá pasta views são html com poucas configuraçoes em php com metod
 
   faz o controle de acesso e funcionalidades do sistema utilizando Switch
 
-## Composer
 
-As alterações em classes deverão ser atualizadas utilizando o comando <code>composer dump-autoload -o</code>
 
+<!--
 ## Imagens do projéto
 <code><img height="200" src="img-projeto/Login.png"></code>
 <code><img height="200" src="img-projeto/Cadastro.png"></code>
@@ -52,3 +67,5 @@ As alterações em classes deverão ser atualizadas utilizando o comando <code>c
 <code><img height="200" src="img-projeto/NovoContato.png"></code>
 <code><img height="200" src="img-projeto/ListarTodos.png"></code>
 <code><img height="200" src="img-projeto/ConfigurarUsuario.png"></code>
+-->
+

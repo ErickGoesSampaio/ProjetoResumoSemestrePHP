@@ -1,7 +1,8 @@
 <?php
 include 'topo.php';
 
-//Quando fazer o inicio da sessão mostrará a mensagem de Página Inicial
+// Quando fazer o inicio da sessão
+// mostrará a mensagem de Página Inicial
 
 if($_SESSION['mensagem'] == "") {
     $mensagem = 'Página Inicial';

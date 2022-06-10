@@ -1,15 +1,4 @@
-<?php
-// starta sessões
-session_start();
-if(isset($_SESSION['navegacao'])) {
-    $usuario = $_SESSION['navegacao'];
-} else {
-    header('Location: ../index.php');
-    die();
-}
 
-require '../vendor/autoload.php';
-?>
 
 <!doctype html>
 <html lang="en" class="h-100">
@@ -51,7 +40,7 @@ require '../vendor/autoload.php';
 <body class="d-flex flex-column h-100">
 
 <header>
-   
+    
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
         <div class="container-fluid">
             <span class="navbar-brand">Agenda Pessoal</span>
@@ -62,35 +51,19 @@ require '../vendor/autoload.php';
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <ul class="navbar-nav me-auto mb-2 mb-md-0">
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="main.php">Home</a>
+                        <a class="nav-link" aria-current="page" href="../main.php">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="novo_contato.php">Novo Contato</a>
+                        <a class="nav-link" aria-current="page" href="../novo_contato.php">Novo Contato</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="calendario/calendar.php">Calendario Eventos</a>
+                        <a class="nav-link" href="calendar.php">Calendario Eventos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../views/contatos.php">Listar Todos</a>
+                        <a class="nav-link" href="../contatos.php">Listar Todos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../views/calculadora.php">Calculadora</a>
-                    </li>
-                </ul>
-
-                <ul class="navbar-nav me-right mb-lg-0">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                           data-bs-toggle="dropdown" aria-expanded="false">
-                            <?= $usuario[0]['nome']; ?>
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="configurar.php">Configurar</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="logout.php">Sair</a></li>
-                        </ul>
+                        <a class="nav-link" href="../calculadora.php">Calculadora</a>
                     </li>
                 </ul>
             </div>
